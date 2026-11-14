@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | MySecureGPT</title>
+<meta name="description" content="Talk to us about an AI risk review for your business.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="MySecureGPT" data-fallback=".brand-text"><span class="brand-text" style="display:none">My<span>Secure</span>GPT</span></a>
+    <button class="menu-btn" aria-label="Menu">Menu</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a class="nav-cta active" href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="page-head" style="padding-left:0">
+      <h1>Contact Us</h1>
+      <p>Start with an AI risk review: a short conversation about how your team uses AI today and where the biggest gaps are.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <ul class="check">
+          <li>See where AI is used across your business</li>
+          <li>Understand what data is exposed</li>
+          <li>Leave with clear next steps</li>
+        </ul>
+        <!-- TODO: add your phone number / email here if you want them shown -->
+      </div>
+      <form class="form-box" data-hs="contact">
+        <div class="row">
+          <div class="field"><label for="firstname">First Name</label><input id="firstname" name="firstname" autocomplete="given-name"></div>
+          <div class="field"><label for="lastname">Last Name</label><input id="lastname" name="lastname" autocomplete="family-name"></div>
+        </div>
+        <div class="field"><label for="email">Email<i>*</i></label><input id="email" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="company">Company Name</label><input id="company" name="company" autocomplete="organization"></div>
+        <div class="field"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="message">How can we help?</label><textarea id="message" name="message"></textarea></div>
+        <button class="btn" type="submit">Send Message</button>
+        <div class="msg" role="status"></div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>&copy; <span id="y"></span> MySecureGPT. All rights reserved.</div>
+    <div><a href="services.html">Services</a> &nbsp;|&nbsp; <a href="resources.html">Resources</a> &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></div>
+  </div>
+</footer>
+</body>
+</html>

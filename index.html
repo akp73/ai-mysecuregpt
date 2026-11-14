@@ -3,107 +3,76 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Governance for Growing Businesses | MySecureGPT</title>
-<meta name="description" content="Practical AI governance for small and mid-sized businesses: policies, risk assessment, secure AI tooling and ongoing oversight.">
-<style>
-  :root{--bg:#0b1220;--panel:#121b2e;--text:#e8edf6;--muted:#9fb0cc;--accent:#3ea6ff;--accent2:#22d3a6;--line:#22304d}
-  *{box-sizing:border-box}
-  body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
-  a{color:var(--accent)}
-  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-  header{border-bottom:1px solid var(--line)}
-  nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
-  .logo{font-weight:700;letter-spacing:.3px}
-  .logo span{color:var(--accent2)}
-  nav a.cta{margin-left:0}
-  .btn{display:inline-block;background:var(--accent);color:#04101f;font-weight:600;padding:12px 22px;border-radius:8px;text-decoration:none}
-  .btn.alt{background:transparent;color:var(--text);border:1px solid var(--line);margin-left:10px}
-  .hero{padding:80px 0 60px}
-  .hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:0 0 18px}
-  .hero p{color:var(--muted);font-size:1.15rem;max-width:680px}
-  section{padding:56px 0;border-top:1px solid var(--line)}
-  h2{font-size:1.7rem;margin:0 0 8px}
-  .sub{color:var(--muted);margin:0 0 32px;max-width:640px}
-  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
-  .card h3{margin:0 0 8px;font-size:1.1rem}
-  .card p{margin:0;color:var(--muted)}
-  .num{color:var(--accent2);font-weight:700}
-  ul.check{list-style:none;padding:0;margin:0}
-  ul.check li{padding-left:28px;position:relative;margin:10px 0;color:var(--muted)}
-  ul.check li::before{content:"\2713";position:absolute;left:0;color:var(--accent2);font-weight:700}
-  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
-</style>
+<title>AI Governance Guide | MySecureGPT</title>
+<meta name="description" content="Download the AI Governance Guide and give your teams safe access to AI without putting company data at risk.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
 </head>
 <body>
 <header>
-  <div class="wrap">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="MySecureGPT" data-fallback=".brand-text"><span class="brand-text" style="display:none">My<span>Secure</span>GPT</span></a>
+    <button class="menu-btn" aria-label="Menu">Menu</button>
     <nav>
-      <div class="logo">My<span>Secure</span>GPT</div>
-      <a class="btn" href="#contact">Book an AI risk review</a>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a class="nav-cta" href="contact.html">Contact Us</a></li>
+      </ul>
     </nav>
   </div>
 </header>
 
 <main>
-  <div class="wrap hero">
-    <h1>Use AI with confidence, not guesswork.</h1>
-    <p>Your team is already using ChatGPT, Copilot and other AI tools. We help you put the right policies, controls and oversight in place so you gain the productivity without exposing client data or creating compliance problems.</p>
-    <p><a class="btn" href="#contact">Book an AI risk review</a><a class="btn alt" href="#offering">See what's included</a></p>
-  </div>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Stop Guessing if Your Data is Safe with AI... Download the AI Governance Guide To Give Safe AI Access to Your Teams</h1>
+        <h2>Your people are already using AI. Get ahead of the risk before it becomes a problem.</h2>
+        <img class="cover" src="assets/guide-cover.png" alt="AI Governance Guide cover" data-fallback=".cover-fallback">
+        <div class="cover-fallback"><b>AI Governance Guide</b><small>Cover image goes here (assets/guide-cover.png)</small></div>
+      </div>
 
-  <section id="why">
-    <div class="wrap">
-      <h2>The risk is already in your business</h2>
-      <p class="sub">Most organizations adopted AI informally, one employee at a time. That leaves gaps leadership can't see.</p>
-      <div class="grid">
-        <div class="card"><h3>Shadow AI</h3><p>Employees paste client data, contracts and source code into unapproved public AI tools.</p></div>
-        <div class="card"><h3>No written policy</h3><p>Without an acceptable use policy, there is nothing to enforce and nothing to show an auditor or insurer.</p></div>
-        <div class="card"><h3>Compliance exposure</h3><p>Regulations, client contracts and cyber insurance questionnaires increasingly ask how you govern AI.</p></div>
+      <div class="form-card" id="guide">
+        <h3>Get the AI Governance Guide</h3>
+        <form class="form-box" data-hs="guide">
+          <div class="row">
+            <div class="field"><label for="firstname">First Name</label><input id="firstname" name="firstname" autocomplete="given-name"></div>
+            <div class="field"><label for="lastname">Last Name</label><input id="lastname" name="lastname" autocomplete="family-name"></div>
+          </div>
+          <div class="field"><label for="email">Email<i>*</i></label><input id="email" name="email" type="email" required autocomplete="email"></div>
+          <div class="field"><label for="company">Company Name</label><input id="company" name="company" autocomplete="organization"></div>
+          <div class="field"><label for="phone">Phone Number<i>*</i></label><input id="phone" name="phone" type="tel" required autocomplete="tel"></div>
+          <button class="btn" type="submit">Get AI Governance Guide</button>
+          <p class="fine">We respect your privacy and will only use your details to send the guide and follow up about AI governance.</p>
+          <div class="msg" role="status"></div>
+        </form>
       </div>
     </div>
   </section>
 
-  <section id="offering">
+  <section class="block soft">
     <div class="wrap">
-      <h2>The AI Governance offering</h2>
-      <p class="sub">A practical, right-sized program for small and mid-sized businesses.</p>
+      <h2 class="title">What's inside the guide</h2>
+      <p class="lead">A practical starting point for leaders who need AI to be useful and safe at the same time.</p>
       <div class="grid">
-        <div class="card"><div class="num">01</div><h3>AI Discovery &amp; Risk Assessment</h3><p>Inventory the AI tools in use, map the data they touch, and rate the risk.</p></div>
-        <div class="card"><div class="num">02</div><h3>Policy &amp; Standards</h3><p>Acceptable use policy, approved tool list, data classification rules and employee guidance.</p></div>
-        <div class="card"><div class="num">03</div><h3>Secure AI Enablement</h3><p>Configure approved tools with the right access controls, data protections and logging.</p></div>
-        <div class="card"><div class="num">04</div><h3>Training &amp; Awareness</h3><p>Short, role-based training so staff know what is and isn't safe to put into AI.</p></div>
-        <div class="card"><div class="num">05</div><h3>Ongoing Oversight</h3><p>Periodic reviews, new tool vetting and reporting leadership can act on.</p></div>
-        <div class="card"><div class="num">06</div><h3>Audit-Ready Evidence</h3><p>Documentation for clients, auditors and cyber insurers.</p></div>
+        <div class="card"><div class="num">01</div><h3>Where AI risk hides</h3><p>Shadow AI, data leakage and the questions clients and insurers are starting to ask.</p></div>
+        <div class="card"><div class="num">02</div><h3>The policies you need</h3><p>What an acceptable use policy should cover and how to roll it out to your teams.</p></div>
+        <div class="card"><div class="num">03</div><h3>Safe access for your teams</h3><p>How to approve AI tools and keep sensitive company data protected.</p></div>
       </div>
-    </div>
-  </section>
-
-  <section id="outcomes">
-    <div class="wrap">
-      <h2>What you walk away with</h2>
-      <ul class="check">
-        <li>A clear picture of where AI is used and what data is at risk</li>
-        <li>A board- and client-ready AI governance policy set</li>
-        <li>Approved, secured AI tools your team can use right away</li>
-        <li>A repeatable review process as AI tools and regulations change</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="wrap">
-      <h2>Start with an AI risk review</h2>
-      <p class="sub">A short conversation to understand how your team uses AI today and where the biggest gaps are.</p>
-      <!-- TODO: replace with your real email address or a booking link -->
-      <a class="btn" href="mailto:CONTACT_EMAIL_HERE?subject=AI%20risk%20review">Contact us</a>
+      <p style="margin-top:36px"><a class="btn" href="#guide">Download the Guide</a> <a class="btn outline" href="services.html">See our services</a></p>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap">&copy; <span id="y"></span> MySecureGPT. All rights reserved.</div>
+  <div class="wrap foot">
+    <div>&copy; <span id="y"></span> MySecureGPT. All rights reserved.</div>
+    <div><a href="services.html">Services</a> &nbsp;|&nbsp; <a href="resources.html">Resources</a> &nbsp;|&nbsp; <a href="contact.html">Contact Us</a></div>
+  </div>
 </footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
