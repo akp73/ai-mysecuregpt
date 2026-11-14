@@ -25,6 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (img.complete && img.naturalWidth === 0) showFallback();
   });
 
+  // show a placeholder if the video file has not been added yet
+  document.querySelectorAll(".video-frame").forEach(frame => {
+    const v = frame.querySelector("video"), s = v && v.querySelector("source");
+    if (s) s.addEventListener("error", () => frame.classList.add("empty"));
+  });
+
   document.querySelectorAll("form[data-hs]").forEach(form => {
     form.addEventListener("submit", async e => {
       e.preventDefault();
